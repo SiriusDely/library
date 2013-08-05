@@ -10,15 +10,15 @@ var app = app || {};
     template: _.template( $( '#bookTemplate' ).html() ),
     
     events: {
-        'click .delete': 'deleteBook'
+      'click .delete': 'deleteBook'
     },
 
     deleteBook: function() {
-        //Delete model
-        this.model.destroy();
+      //Delete model
+      this.model.destroy();
 
-        //Delete view
-        this.remove();
+      //Delete view
+      this.remove();
     },
 
     render: function() {
